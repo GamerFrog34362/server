@@ -7,12 +7,13 @@ export async function addFavorite(req, res) {
   }
 
   const user = await UserModel.findById(sessionUser.id)
-  const { title, imdbID, poster } = req.body
+  const { title, imdbID, poster, year } = req.body
 
   user.favorites.push({
     title,
     imdbID,
     poster,
+    year,
   })
   user.save()
 }
