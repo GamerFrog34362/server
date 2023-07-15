@@ -1,4 +1,6 @@
 import { config } from "dotenv"
+import fetch from "node-fetch"
+
 config()
 
 const API_KEY = process.env.MOVIE_API_KEY
