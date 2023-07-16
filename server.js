@@ -48,10 +48,10 @@ app.use(
   })
 )
 
-app.use((req, res, next) => {
+/*app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`)
   next()
-})
+})*/
 
 // #endregion
 
@@ -67,7 +67,7 @@ mongoose.connect(process.env.URI)
 const PORT = process.env.API_PORT
 
 app.listen(PORT, () => {
-  console.log("Server is online at port " + PORT)
+  /*console.log("Server is online at port " + PORT)*/
 })
 
 // #endregion
